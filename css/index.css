@@ -126,9 +126,84 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-nav {
-  background-color: red;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
 }
-body {
-  background-color: FFFFF;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  text-transform: uppercase;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li #pink {
+  color: #F09B9B;
+}
+nav ul li a {
+  text-decoration: none;
+  align-self: center;
+  color: #73CEC5;
+}
+nav ul li a:hover {
+  color: #F09B9B;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  max-width: 50%;
+  border: 2px solid red;
+  line-height: 1.5;
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+}
+.container header div {
+  display: flex;
+  align-self: center;
+}
+.container header div {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+.container header div h2 {
+  padding: 2% 0%;
+}
+.container section {
+  display: flex;
+  flex-direction: column;
+}
+.container section div {
+  align-self: center;
+}
+.container section div {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+.container section div h2 {
+  padding: 2% 0%;
+}
+.container footer {
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 2;
+  font-size: 80% ;
+  padding: 3%;
 }
