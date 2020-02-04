@@ -148,15 +148,46 @@ nav {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   padding: 1% 0;
+  background-color: #f2f7f8;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    padding: 0;
+  }
 }
 nav ul {
   display: flex;
   justify-content: space-evenly;
-  width: 45%;
+  width: 70%;
   text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  nav ul {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  nav ul {
+    border-top: 1px solid white;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
 }
 nav ul li {
   display: flex;
+}
+@media (max-width: 500px) {
+  nav ul li {
+    border-bottom: 1px solid white;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 nav ul li #pink {
   color: #F09B9B;
@@ -165,9 +196,21 @@ nav ul li a {
   text-decoration: none;
   align-self: center;
   color: #73CEC5;
+  font-size: 100%;
+}
+@media (max-width: 500px) {
+  nav ul li a {
+    margin: 3%;
+    font-size: 70%;
+  }
 }
 nav ul li a:hover {
   color: #F09B9B;
+}
+@media (max-width: 500px) {
+  nav ul li a img {
+    display: none;
+  }
 }
 .container {
   display: flex;
@@ -185,11 +228,19 @@ nav ul li a:hover {
   display: flex;
   align-self: center;
 }
+.container header img {
+  width: 100%;
+}
 .container header div {
   display: flex;
   flex-direction: column;
   margin: 3%;
   width: 40%;
+}
+@media (max-width: 800px) {
+  .container header div {
+    width: 70%;
+  }
 }
 .container header div h2 {
   padding: 2% 0%;
@@ -201,6 +252,9 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
 }
+.container section img {
+  width: 100%;
+}
 .container section div {
   align-self: center;
 }
@@ -209,6 +263,11 @@ nav ul li a:hover {
   flex-direction: column;
   margin: 3%;
   width: 40%;
+}
+@media (max-width: 800px) {
+  .container section div {
+    width: 70%;
+  }
 }
 .container section div h2 {
   padding: 2% 0%;
@@ -233,4 +292,7 @@ nav ul li a:hover {
   line-height: 2;
   font-size: 80% ;
   padding: 3%;
+}
+.container footer nav {
+  background-color: black;
 }

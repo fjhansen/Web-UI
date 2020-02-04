@@ -6,15 +6,43 @@ nav {
     font-family: @font;
     font-weight: 100;
     padding: 1% 0;
+    background-color: rgb(242, 247, 248);
+
+    @media @mobile {
+        width: 100%;
+        padding: 0;
+    }
+    
 
     ul {
         display: flex;
         justify-content: space-evenly;
-        width: 45%;
+        width: 70%;
         text-transform: uppercase;
+        @media @tablet {
+            width: 100%;
+            flex-direction: row;
+        }
+
+        @media @mobile {
+            border-top: 1px solid white;
+            width: 100%;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
 
         li {
             display: flex;
+
+            @media @mobile {
+                border-bottom: 1px solid white;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+            }
+            
             #pink {
                 color: #F09B9B;
             }
@@ -22,9 +50,22 @@ nav {
                 text-decoration: none;
                 align-self: center;
                 color:#73CEC5 ;
+                font-size: 100%;
+
+                @media @mobile {
+                    margin: 3%;
+                    font-size: 70%;
+                    
+                }
 
                 &:hover {
                 color: #F09B9B;
+                }
+
+                img {
+                    @media @mobile {
+                        display: none;
+                    }
                 }
                 
 
