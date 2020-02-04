@@ -388,7 +388,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   width: 90%;
-  border: 1px solid purple;
+  border: ;
   align-items: center;
   margin: auto;
 }
@@ -396,17 +396,20 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid blue;
+  border: ;
   align-items: center;
   flex-direction: column;
   width: 30%;
   margin: auto;
+  background-color: rgba(224, 109, 82, 0.7);
+  margin-top: 1%;
+  padding: 4% 1%;
 }
 .about.top ul li a {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
-  border: 1px solid red;
+  border: ;
   justify-content: center;
 }
 .about.top ul li a img {
@@ -414,10 +417,12 @@ nav ul li a:hover {
   flex-direction: column;
   width: initial;
   margin: 1% 0%;
+  border-radius: 100%;
 }
 .about.top ul li a #git {
   display: flex;
   width: 20%;
+  border-radius: initial;
 }
 .about.top ul li p {
   display: flex;
