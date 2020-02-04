@@ -290,9 +290,27 @@ nav ul li a:hover {
   color: whitesmoke;
   text-align: center;
   line-height: 2;
-  font-size: 80% ;
+  font-size: 80%;
   padding: 3%;
 }
 .container footer nav {
   background-color: black;
+}
+@media (max-width: 500px) {
+  .container footer nav {
+    padding: 1% 0;
+  }
+}
+@media (max-width: 500px) {
+  .container footer nav ul {
+    width: 100%;
+    flex-direction: row;
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .container footer nav ul li a img {
+    display: initial;
+    max-width: 80%;
+  }
 }

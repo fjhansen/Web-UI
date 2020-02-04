@@ -4,14 +4,15 @@
     margin: auto;
     padding: 0;
     max-width: 100%;
-    
+
     line-height: 1.4;
-    
-    
+
+
 
     header {
         display: flex;
         flex-direction: column;
+
         div {
             display: flex;
             align-self: center;
@@ -38,63 +39,91 @@
                 font-weight: bolder;
             }
         }
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
         }
 
-        section {
+        div {
+            align-self: center;
+        }
+
+        div {
             display: flex;
             flex-direction: column;
+            margin: 3%;
+            width: 40%; //
 
-            img {
-                width: 100%;
+            @media @tablet {
+                width: 70%;
+            }
+
+            h2 {
+                padding: 2% 0%;
+                color: #73CEC5;
+                font-family: @font;
+                font-weight: bolder;
+
             }
 
             div {
-                align-self: center;
+                background-color: #73CEC5;
+                padding: 1% 5%;
+                width: 20%;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                }
+            }
+        }
+
+
+    }
+
+    footer {
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        line-height: 2;
+        font-size: 80%;
+        padding: 3%;
+
+        nav {
+            background-color: black;
+
+            @media @mobile {
+                padding: 1% 0;
             }
 
-            div {
-                display: flex;
-                flex-direction: column;
-                margin: 3%;
-                width: 40%; //
-                @media @tablet {
-                    width: 70%;
+            ul {
+
+                @media @mobile {
+                    width: 100%;
+                    flex-direction: row;
+                    border: none;
                 }
 
-                h2 {
-                    padding: 2% 0%;
-                    color: #73CEC5;
-                    font-family: @font;
-                    font-weight: bolder;
-
-                }
-
-                div {
-                    background-color: #73CEC5;
-                    padding: 1% 5%;
-                    width: 20%;
-                    
+                li {
                     a {
-                        text-decoration: none;
-                        color: black;
-                        text-align: center;
+
+                        
+                        img {
+
+                            @media @mobile {
+                                display: initial;
+                                max-width: 80%;
+                            }
+                        }
                     }
                 }
             }
-
-
         }
-
-        footer {
-            background-color: black;
-            color: whitesmoke;
-            text-align: center;
-            line-height: 2;
-            font-size: 80% ;
-        padding: 3%;
-    
-    nav {
-        background-color: black;
-    }}
+    }
 }
-
