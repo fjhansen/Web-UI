@@ -212,6 +212,10 @@ nav ul li a:hover {
     display: none;
   }
 }
+body,
+html {
+  height: 100%;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -375,6 +379,16 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-bottom: 7%;
+  /* The image used */
+  background-image: url("https://cdn.discordapp.com/attachments/540797530632617994/674377039993765908/marble_transparent.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about.top h2 {
   display: flex;
