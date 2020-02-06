@@ -256,7 +256,7 @@ html {
   padding: 2% 0%;
   color: #F09B9B;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bolder;
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   .container header div h2 {
@@ -420,6 +420,14 @@ html {
   border: ;
   align-items: center;
   margin: auto;
+  line-height: 1;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: unset;
+  -moz-hyphens: unset;
+  -ms-hyphens: unset;
+  hyphens: unset;
 }
 @media (max-width: 800px) {
   .about.top ul {
@@ -435,7 +443,7 @@ html {
 .about.top ul li {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   border: ;
   align-items: center;
   flex-direction: column;
@@ -480,6 +488,7 @@ html {
   width: 50%;
   border: ;
   justify-content: center;
+  text-decoration: none;
 }
 @media (max-width: 800px) {
   .about.top ul li a {
@@ -508,27 +517,44 @@ html {
 }
 @media (max-width: 800px) {
   .about.top ul li a #git {
-    max-height: 20vh;
     width: 50%;
+  }
+}
+.about.top ul li a #Dessa {
+  display: flex;
+  width: 45%;
+  border-radius: initial;
+}
+@media (max-width: 800px) {
+  .about.top ul li a #Dessa {
+    width: 50%;
+    margin-bottom: 8%;
+    margin-top: 6%;
   }
 }
 .about.top ul li p {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   width: 98%;
   text-align: center;
-  font-size: 130%;
+  text-justify: inter-character;
+  font-size: 80%;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 800px) {
   .about.top ul li p {
     max-height: 20vh;
-    font-size: 1rem;
+    font-size: 80%;
     text-align: center;
   }
 }
 @media (max-width: 800px) and (max-width: 500px) {
   .about.top ul li p {
-    color: ;
+    font-size: 1.3em;
   }
+}
+.about.top ul li p a {
+  color: rgba(251, 255, 0, 0.692);
 }
